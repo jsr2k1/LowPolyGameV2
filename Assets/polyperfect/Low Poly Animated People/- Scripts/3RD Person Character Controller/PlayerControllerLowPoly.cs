@@ -8,7 +8,7 @@ public class PlayerControllerLowPoly : MonoBehaviour
     public float walkSpeed, runSpeed, rotateSpeed, jumpForce, walkAnimationSpeed, runAnimatonSpeed;
 
     public Animator animator;
-    public new Rigidbody rigidbody;
+    public Rigidbody m_rigidbody;
 
     Vector3 offset;
 
@@ -19,7 +19,7 @@ public class PlayerControllerLowPoly : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        m_rigidbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
 
         distToGround = GetComponent<Collider>().bounds.extents.y;
@@ -48,11 +48,11 @@ public class PlayerControllerLowPoly : MonoBehaviour
         var translation = transform.forward * (vertical * Time.deltaTime);
         translation += transform.right * (horizontalMove * Time.deltaTime);
         translation *= speed;
-        translation = rigidbody.position + translation;
+        translation = m_rigidbody.position + translation;
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            m_rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
         float horizontal = Input.GetAxis("Mouse X") * Time.deltaTime;
@@ -63,8 +63,8 @@ public class PlayerControllerLowPoly : MonoBehaviour
 
         animator.SetFloat("WalkSpeed", animSpeed);
 
-        rigidbody.MovePosition(translation);
-        rigidbody.MoveRotation(rotation);
+        m_rigidbody.MovePosition(translation);
+        m_rigidbody.MoveRotation(rotation);
     }
 
     bool Grounded()

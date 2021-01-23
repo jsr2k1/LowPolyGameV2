@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/JOEL/Scenes/Japan/Japan.unity
-    guid: 4c66ff097d981d4428d148787fed29ff
+    path: Assets/Scenes/test_xr_interaction_locomotion.unity
+    guid: 5a595f7e6b8abf54bac3b2dae12f9a94
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1109eb875a156f348a8f7824dc612be2, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5d0ecef4e5638ac4a83a380214a465f0, type: 2}

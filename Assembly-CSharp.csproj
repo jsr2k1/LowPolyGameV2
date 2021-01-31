@@ -157,6 +157,7 @@
     <Compile Include="Assets\_Packages\Oculus\Avatar\Scripts\OvrAvatarBody.cs" />
     <Compile Include="Assets\_Packages\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs" />
     <Compile Include="Assets\_Packages\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\SocialPlatformManager.cs" />
+    <Compile Include="Assets\Scripts\TestCameras.cs" />
     <Compile Include="Assets\_Packages\VRTeleporter\VRTeleporter.cs" />
     <Compile Include="Assets\_Packages\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\PinchStateModule.cs" />
     <Compile Include="Assets\_Packages\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
@@ -264,7 +265,8 @@
     <Compile Include="Assets\_Packages\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
     <Compile Include="Assets\_Packages\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Packages\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
-    <Compile Include="Assets\Scripts\TestCameras.cs" />
+    <Compile Include="Assets\Scripts\PatrolV2.cs" />
+    <Compile Include="Assets\Scripts\AnimCtrlV2.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\_Packages\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
